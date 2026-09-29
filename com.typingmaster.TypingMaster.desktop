@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=TypingMaster
+GenericName=Typing Tutor
+Comment=Learn touch typing with lessons, games and tests
+Exec=typingmaster
+Icon=com.typingmaster.TypingMaster
+Terminal=false
+Categories=Education;
+Keywords=typing;touch typing;keyboard;tutor;speed;
+StartupWMClass=typingmaster.exe

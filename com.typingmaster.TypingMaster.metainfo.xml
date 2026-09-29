@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.typingmaster.TypingMaster</id>
+  <name>TypingMaster</name>
+  <summary>Learn touch typing with lessons, games and tests</summary>
+  <developer id="com.typingmaster">
+    <name>Cloud Kayak Labs, Inc.</name>
+  </developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+
+  <description>
+    <p>
+      TypingMaster is a typing tutor that teaches touch typing step by step.
+      Guided courses take you from the home row to fluent typing, and games,
+      reviews and tests keep practice varied.
+    </p>
+    <ul>
+      <li>Guided touch typing, speed building and number pad courses</li>
+      <li>Typing games such as Bubbles, Clouds and Word Tris</li>
+      <li>Personal review of your difficult keys</li>
+      <li>Typing tests with detailed results and statistics</li>
+      <li>Many keyboard layouts and user interface languages</li>
+    </ul>
+    <p>
+      This package runs the Windows version of TypingMaster using Wine.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.typingmaster.TypingMaster.desktop</launchable>
+
+  <url type="homepage">https://www.typingmaster.com</url>
+  <url type="help">https://www.typingmaster.com</url>
+
+  <categories>
+    <category>Education</category>
+  </categories>
+
+  <!-- Software centres download these when showing the app: the files must be
+       online at these URLs (uploaded with the Linux download page). -->
+  <screenshots>
+    <screenshot type="default">
+      <image>https://www.typingmaster.com/linux-typing-tutor/typingmaster-linux-lesson.png</image>
+      <caption>Touch typing lesson with keyboard and finger guide</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://www.typingmaster.com/linux-typing-tutor/typingmaster-linux-games.png</image>
+      <caption>Typing games: Bubbles, WordTris, Clouds, ABC Speed Race, Pipe Game and Cloud Race</caption>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1"/>
+
+  <requires>
+    <display_length compare="ge">768</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </supports>
+
+  <releases>
+    <!-- Newest first. Maintained by scripts/update-app.sh — do not remove this line. -->
+    <release version="12.0.1.980" date="2026-09-29"/>
+  </releases>
+</component>

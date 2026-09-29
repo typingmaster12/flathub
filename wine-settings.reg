@@ -1,0 +1,32 @@
+Windows Registry Editor Version 5.00
+
+; Wine defaults for the TypingMaster prefix. Imported when the prefix is
+; created, and again whenever this file changes (files/typingmaster.sh keeps a
+; checksum). Keep the file UTF-8 without BOM; CRLF is not required.
+
+; Report Windows 10 to the application.
+[HKEY_CURRENT_USER\Software\Wine]
+"Version"="win10"
+
+; Keep window-manager decorations (maximize/full screen need them).
+; Builds without the captureBook fix (TBookFormEx.captureBook disabled) move
+; the window slightly on lesson changes in light mode with decorations on.
+[HKEY_CURRENT_USER\Software\Wine\X11 Driver]
+"Decorated"="Y"
+"Managed"="Y"
+
+; Segoe UI (menus) and Verdana (most labels) are not available on Linux: use
+; Selawik, bundled in the package (/app/share/fonts/selawik). It has Segoe UI
+; metrics; Verdana is wider, so Verdana texts get slightly narrower, never
+; clipped.
+[HKEY_CURRENT_USER\Software\Wine\Fonts\Replacements]
+"Segoe UI"="Selawik"
+"Segoe UI Semibold"="Selawik Semibold"
+"Verdana"="Selawik"
+
+; Font smoothing like on Windows (subpixel RGB).
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+"FontSmoothingGamma"=dword:00000578
+"FontSmoothingOrientation"=dword:00000001

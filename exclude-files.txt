@@ -1,0 +1,3 @@
+# Files from the program zip that are not installed (from config.sh).
+splashtm.bmp
+3.Grp
